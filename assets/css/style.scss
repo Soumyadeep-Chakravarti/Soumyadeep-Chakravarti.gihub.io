@@ -3,13 +3,46 @@
 
 @import "{{ site.theme }}";
 
-// Custom styles
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.6;
+  background-image: url('{{ site.background_image | relative_url }}');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: #333;
 }
 
-// Timeline styles
+.content-wrapper {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.profile-picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 20px;
+  display: block;
+  border: 5px solid #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #2c3e50;
+}
+
+a {
+  color: #3498db;
+  
+  &:hover {
+    color: #2980b9;
+  }
+}
+
 .timeline {
   position: relative;
   max-width: 1200px;
@@ -66,7 +99,6 @@ body {
   border-radius: 6px;
 }
 
-// Project styles
 .project {
   margin-bottom: 2rem;
   padding: 1rem;
@@ -92,7 +124,6 @@ body {
   }
 }
 
-// Tag cloud styles
 #tag-cloud {
   text-align: center;
   

@@ -1,0 +1,25 @@
+title: Your Name
+description: Your Job Title
+url: "https://your-username.github.io"
+theme: minima
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+
+github_username: your-username
+linkedin_username: your-linkedin-username
+email: your.email@example.com
+
+header_pages:
+  - about.md
+  - skills.md
+  - projects.md
+  - experience.md
+  - education.md
+  - blog.md
+
+markdown: kramdown
+show_excerpts: true
+
+profile_picture: /assets/images/profile.jpg
+background_image: /assets/images/background.jpg
